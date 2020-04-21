@@ -14,6 +14,7 @@ const (
 	DefaultParamspace = types.DefaultParamspace
 	QueryParams       = types.QueryParams
 	QuerierRoute      = types.QuerierRoute
+	StoreKey          = types.StoreKey
 )
 
 var (
@@ -24,17 +25,29 @@ var (
 	NewGenesisState     = types.NewGenesisState
 	DefaultGenesisState = types.DefaultGenesisState
 	ValidateGenesis     = types.ValidateGenesis
+	NewMsgBuyName       = types.NewMsgBuyName
+	NewMsgSetName       = types.NewMsgSetName
+	NewMsgDeleteName    = types.NewMsgDeleteName
+	NewWhois            = types.NewWhois
+	ModuleCdc           = types.ModuleCdc
+	RegisterCodec       = types.RegisterCodec
 	// TODO: Fill out function aliases
 
 	// variable aliases
-	ModuleCdc     = types.ModuleCdc
+	ModuleCdc = types.ModuleCdc
 	// TODO: Fill out variable aliases
 )
 
 type (
-	Keeper       = keeper.Keeper
-	GenesisState = types.GenesisState
-	Params       = types.Params
+	Keeper          = keeper.Keeper
+	GenesisState    = types.GenesisState
+	Params          = types.Params
+	MsgSetName      = types.MsgSetName
+	MsgBuyName      = types.MsgBuyName
+	MsgDeleteName   = types.MsgDeleteName
+	QueryResResolve = types.QueryResResolve
+	QueryResNames   = types.QueryResNames
+	Whois           = types.Whois
 
 	// TODO: Fill out module types
 )
